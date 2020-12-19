@@ -6,16 +6,11 @@
         
         
         <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-      <link type="text/css" rel="stylesheet" href="css/login.css" />
-
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">   
-        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
-        <meta name="color-scheme" content="light dark">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <link rel="stylesheet" href="css/jquery.mobile.structure-1.0.1.css" />
+        <link rel="stylesheet" href="css/jquery.mobile-1.0.1.css" />
+        <script src="js/jquery-1.7.1.min.js"></script>
+        <script src="js/jquery.mobile-1.0.1.min.js"></script>
         <title>Health Check 20</title>
     </head>
     <body>
@@ -59,7 +54,7 @@
                           <a type='submit' name='btn_login' class='col s12 btn btn-large waves-effect indigo' href="#signup">Signin</a>
                         </div>
                         <div class='row'>
-                            <a type='submit' name='btn_signup' href="signup.html" class='col s12 btn btn-large waves-effect indigo'>SignUP</a>
+                            <a type='submit' name='btn_signup' href="#signup" class='col s12 btn btn-large waves-effect indigo'>SignUP</a>
                         </div>
 
                       </center>
@@ -74,12 +69,68 @@
             </main>
             
         </div>
+        <div data-role="page" id="signup">
+          <div class="section"></div>
+          <main>
+            <center>
+              
         
+              <div class="container">
+                <div class="row " style="display: inline-block; padding: 32px 48px 0px 48px;">
+                  <div class="section"></div>
+        
+                  <h5 class="indigo-text">Please, Sign up to Continue</h5>
+                  <div class="section"></div>
+                  <form class="col s12" method="post">
+                    <div class='row'>
+                      <div class='col s12'>
+                      </div>
+                    </div>
+                    <div class='row'>
+                      <div class='input-field col s12'>
+                        <input class='validate' type='text' name='full name' id='fullname' />
+                        <label for='fullname'>Enter your full name</label>
+                      </div>
+                    </div>
+        
+                    <div class='row'>
+                      <div class='input-field col s12'>
+                        <input class='validate' type='email' name='email' id='email2' />
+                        <label for='email2'>Enter your email</label>
+                      </div>
+                    </div>
+        
+                    <div class='row'>
+                      <div class='input-field col s12'>
+                        <input class='validate' type='password' name='password' id='password2' />
+                        <label for='password2'>Enter your password</label>
+                      </div>
+                     
+                      
+        
+                    <br />
+                    <center>
+                      <div class='row'>
+                        <button type='submit' name='btn_login' class='col s12 btn btn-large waves-effect indigo'>conferm</button>
+                      </div>
+                     
+
+                    </center>
+                  </form>
+                </div>
+              </div>
+            </center>
+        
+            <div class="section"></div>
+            <div class="section"></div>
+          </main>
+
+
+      </div>
+      
         
 
-              <script type="text/javascript" src="js/materialize.min.js"></script>
-              <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
-
+            
 
     </body>
 </html>
