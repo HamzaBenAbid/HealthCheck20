@@ -8,6 +8,8 @@
 *
 */
 
+
+
 /* Some unsets */
 .ui-mobile,
 .ui-mobile body {
@@ -436,3 +438,11 @@ button.ui-btn-icon-notext,
 .ui-screen-hidden {
 	display: none !important;
 }
+/* fix navbar */ 
+
+  
+  @media only screen and (min-width: 993px){
+  nav a.button-collapse {
+	  display: block;
+  }
+  }
