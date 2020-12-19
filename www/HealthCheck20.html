@@ -14,7 +14,7 @@
         <title>Health Check 20</title>
     </head>
     <body>
-    <div data-role="page" id="login">
+    <div data-role="page" id="login" data-add-back-btn="true">
             <div class="section"></div>
             <main>
               <center>
@@ -51,7 +51,7 @@
                       <br />
                       <center>
                         <div class='row'>
-                          <a type='submit' name='btn_login' class='col s12 btn btn-large waves-effect indigo' href="#signup">Signin</a>
+                          <a type='submit' name='btn_login' class='col s12 btn btn-large waves-effect indigo' href="#bilan">Signin</a>
                         </div>
                         <div class='row'>
                             <a type='submit' name='btn_signup' href="#signup" class='col s12 btn btn-large waves-effect indigo'>SignUP</a>
@@ -69,12 +69,11 @@
             </main>
             
         </div>
+      <!--page sign up -->
         <div data-role="page" id="signup">
           <div class="section"></div>
           <main>
             <center>
-              
-        
               <div class="container">
                 <div class="row " style="display: inline-block; padding: 32px 48px 0px 48px;">
                   <div class="section"></div>
@@ -111,7 +110,7 @@
                     <br />
                     <center>
                       <div class='row'>
-                        <button type='submit' name='btn_login' class='col s12 btn btn-large waves-effect indigo'>conferm</button>
+                        <button type='submit' name='btn_confirm' class='col s12 btn btn-large waves-effect indigo'>confirm</button>
                       </div>
                      
 
@@ -124,13 +123,72 @@
             <div class="section"></div>
             <div class="section"></div>
           </main>
-
-
+      </div>
+      <div data-role="page" id="bilan">
+        <div class="section"></div>
+        <main>
+          <center>
+            <div class="container">
+              <div class="row " style="display: inline-block; padding: 32px 48px 0px 48px;">
+                <div class="section"></div>
+      
+                <h5 class="indigo-text">Bilan</h5>
+                <div class="section"></div>
+                <form class="col s12" method="post">
+                  <div class='row'>
+                    <div class='col s12'>
+                    </div>
+                  </div>
+  
+                
+        <div class='input-field col s12'>
+        <label for="date">Age</label>
+        <input type="date" name="date" id="date" value="">
+        </div>
+        <div>
+          <label >Sex</label>
+          </div>
+       
+      <div class='input-field col s12'> 
+      <form >
+            <label>
+                <input type="checkbox" name="checkbox-0 ">female
+            </label>
+        <label>
+               <input type="checkbox" name="checkbox-1 ">male
+        </label>
+      </form>
+      </div>
+      <div class='input-field col s12'>
+        <form>
+               <label for="number-1">Height in Cm</label>
+               <input type="number" data-clear-btn="false" name="number-1" id="number-1" value="">
+        </form>
+        </div>
+        <div class='input-field col s12'>
+        <form>
+               <label for="number-1">weight in Cm</label>
+               <input type="number" data-clear-btn="false" name="number-2" id="number-2" value="">
+        </form>
+        </div>
+        <div class='input-field col s12'>
+        <form>
+               <label for="number-1">Body Fat Ration in %</label>
+               <input type="number" data-clear-btn="false" name="number-3" id="number-3" value="">
+        </form>
+        </div>
+        <div class='row'>
+          <button type='submit' name='btn_submit' class='col s12 btn btn-large waves-effect indigo'>submit</button>
+        </div>
+    
+        
+      </main>
+      <div class="section"></div>
+      <div class="section"></div>
       </div>
       
         
 
-            
-
+    
     </body>
 </html>
