@@ -12,6 +12,8 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
       <script type="text/javascript" src="js/addplugin.js"></script>
       <script type="text/javascript" src="cordova.js"></script>
+      <script type="text/javascript" src="js/addfirebase.js"></script>
+    
       <script>
          $(document).ready(function(){
            $('.button-collapse').sideNav();
@@ -74,7 +76,7 @@
          <div class="container">
             <div class="row " style="display: inline-block; padding: 32px 48px 0px 48px;">
                <h5 class="indigo-text">Please, Sign up to Continue</h5>
-               <form class="col s12" method="post">
+               <form class="col s12"  action="#">
                   <div class='row'>
                      <div class='col s12'>
                      </div>
@@ -99,7 +101,7 @@
                      <br />
                      <center>
                         <div class='row'>
-                           <a type='submit' name='btn_confirm' class='col s12 btn btn-large waves-effect indigo'>confirm</a>
+                           <a type='submit' name='signupsub' class='col s12 btn btn-large waves-effect indigo' id='signupsub' href="#login">confirm</a>
                         </div>
                      </center>
                </form>
@@ -255,6 +257,25 @@
          </div>
       </div>
       <!-- add plugin -->
+      <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+
+      <script>
+         // Your web app's Firebase configuration
+         // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+         var firebaseConfig = {
+           apiKey: "AIzaSyC_hYK02kO4cFegnUhcrY5_iLJ8g9SHM7o",
+           authDomain: "healthcheck20-2d0f4.firebaseapp.com",
+           projectId: "healthcheck20-2d0f4",
+           storageBucket: "healthcheck20-2d0f4.appspot.com",
+           messagingSenderId: "582854181445",
+           appId: "1:582854181445:web:014c3d79217b6a8675992c",
+           measurementId: "G-MJD2K86PW2"
+         };
+         // Initialize Firebase
+         firebase.initializeApp(firebaseConfig);
+         firebase.analytics();
+       </script>
      
    </body>
 </html>

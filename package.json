@@ -29,5 +29,9 @@
       "android",
       "browser"
     ]
+  },
+  "dependencies": {
+    "cordova-plugin-firebase": "2.0.5",
+    "firebase": "^8.2.1"
   }
 }
