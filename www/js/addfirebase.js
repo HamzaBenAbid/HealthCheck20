@@ -35,12 +35,30 @@ $('#signupsub').click(function () {
     
     //Créer une référence à la base de données
     var firebaseRef = firebase.database().ref();
-    if ((nom != "") && (email != "")(password != "")){
+    if ((nom != "") && (email != "")&&(password != "")){
         var noeud = firebaseRef.push();
         
         noeud.child("nom").set(nom);
         noeud.child("email").set(email);
         noeud.child("password").set(password);
     }
+    $('#bilan_submit').click(function () {
+        var date = $('#birthdate').val();
+        var height = $('#height').val();
+        var weight = $('#weight').val();
+        var fatratio = $('#fatratio').val();
+        
+        //Créer une référence à la base de données
+        var firebaseRef = firebase.database().ref();
+        if ((date != "") && (height != "")&&(weight != "")&&(fatratio != "")){
+            var noeud = firebaseRef.push();
+            
+            noeud.child("date").set(date);
+            noeud.child("height").set(height);
+            noeud.child("weight").set(weight);
+            noeud.child("fatratio").set(fatratio);
+
+        }
+    
     
 });
