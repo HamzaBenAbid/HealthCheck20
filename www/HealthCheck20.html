@@ -281,18 +281,26 @@ $(document).ready(function(){
                 <div data-role="toolbar" data-type="header" style="overflow:hidden;">
                   
 
-              <!-- navbar starts here  , swipe not working will fix later -->
+              <!-- navbar starts here  -->
 
               <nav class="nav">
                 <div data-role="navbar" class="nav-wrapper indigo">
                   
                     <a href="#" class="brand-logo center">Dashboard</a>
-                    <a href="#" data-activates="mobile-demo" class="button-collapse left"><i class="material-icons">menu</i></a>
-                  
-                    <ul class="side-nav" id="mobile-demo">
-                      <li><a id="profileMenu" href="#profilePage">Profile</a></li>
-                      <li><a id="settings" href="#settings">Setings</a></li>
-                      <li><a id="logout" href="#logout">Logout</a></li>
+
+                <a href="#" data-activates="mobile-screen" class="button-collapse left"><i class="material-icons">menu</i></a>
+                
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                  <li><a id="profilenav" href="#profilePage">Profile</a></li>
+                  <li><a id="settingsnav" href="#settings">Settings</a></li>
+                  <li><a id="lougoutnav" href="#logout">logout</a></li>
+              </ul>
+
+
+                    <ul class="side-nav" id="mobile-screen">
+                      <li><a id="sideprofilenav" href="#profilePage">Profile</a></li>
+                      <li><a id="sidesettingsnav" href="#settings">Setings</a></li>
+                      <li><a id="sidelogoutnav" href="#logout">Logout</a></li>
                     </ul>
                 </div>
             </nav>
