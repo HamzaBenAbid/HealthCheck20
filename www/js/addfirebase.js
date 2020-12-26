@@ -18,7 +18,6 @@ var app = {
         var parentElement = document.getElementById(id);
         var listeningElement = parentElement.querySelector('.listening');
         var receivedElement = parentElement.querySelector('.received');
-
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
 
@@ -28,20 +27,54 @@ var app = {
 
 app.initialize();
 
-$('#signupsub').click(function () {
-    var nom = $('#fullname').val();
-    var email = $('#email2').val();
-    var password = $('#password2').val();
+// Sign up and Login 
+	$('#signupsub').click(function(){
+		
+		var inputEmail = $('#Email').val()
+		var inputPass = $('#UserPassword').val()
+		
+		firebase.auth().createUserWithEmailAndPassword(
+			inputEmail, inputPass
+		).catch(function(error) {
+			// lets save errors here
+			var errorCode = error.code;
+			var errorMessage = error.message;
+			
+		});
+		alert('Account Created , Please Login with :' + inputEmail)
+    })
     
-    //Créer une référence à la base de données
-    var firebaseRef = firebase.database().ref();
-    if ((nom != "") && (email != "")&&(password != "")){
-        var noeud = firebaseRef.push();
-        
-        noeud.child("nom").set(nom);
-        noeud.child("email").set(email);
-        noeud.child("password").set(password);
-    }
+
+
+    $('#signinsub').click(function(){
+		
+		var inputEmail = $('#email').val()
+		var inputPass = $('#password').val()
+		
+		firebase.auth().signInWithEmailAndPassword(
+			inputEmail, inputPass
+		).catch(function(error) {
+			// Handle Errors here.
+			var errorCode = error.code;
+			var errorMessage = error.message;
+			// ...
+		});
+    })
+    
+
+
+	$('#logout').click(function(){
+		firebase.auth().signOut().then(function() {
+			alert('test sign out event')
+		}, function(error) {
+			alert('there was an error: ' + error)
+		});
+	})
+
+
+
+
+
     $('#bilan_submit').click(function () {
         var date = $('#birthdate').val();
         var height = $('#height').val();
