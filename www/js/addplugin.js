@@ -12,7 +12,7 @@ var app = {
     onDeviceReady: function() {
         document.querySelector("#Uploadpicture").addEventListener("click", app.callCamera);
         console.log("button listener added");
-        app.image = document.querySelector("#img");
+      profilepic = document.getElementById('ProfilePicture');
     },
     
     callCamera: function ( ) {
@@ -30,9 +30,10 @@ var app = {
         navigator.camera.getPicture( app.imgSuccess, app.imgFail, app.imgOptions );
     },
     
+
     imgSuccess: function ( imageData ) {
         //got an image back from the camera
-           app.image.src = "data:image/jpeg;base64," + imageData;
+        profilepic.src = "data:image/jpeg;base64," + imageData;
         console.log("Image loaded into interface");
         //clear memory in app
         navigator.camera.cleanup();
@@ -44,4 +45,11 @@ var app = {
     
 };
 
+
+
+
+
+
 app.initialize();
+
+
