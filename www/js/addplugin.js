@@ -1,22 +1,17 @@
-const { takePicture } = require("../../plugins/cordova-plugin-camera/src/browser/CameraProxy");
+document.getElementById("Uploadpicture").addEventListener("click", cameraTakePicture); 
 
-document.addEventListener("deviceready", onDeviceReady, false);
-function onDeviceReady() {
-    document.getElementById('Uploadpicture').addEventListener('click',takePicture);
-
-    function takePicture(){
-        navigator.camera.getPicture(success,console.error,{
-            quality:50,
-            destinationType:camera.DestinationType.Data_URL
-        });
-    }
+   function cameraTakePicture() { 
+    navigator.camera.getPicture(onSuccess, onFail, {  
+       quality: 50, 
+       destinationType: Camera.DestinationType.DATA_URL 
+    });  
     
-    function success(imageData){
-        var img=document.getElementById('img1');
-        img.src = "data:img"+imageData;
-    }
-    function error(err){
-        console.log("erorr--->"+err);
-    }
+    function onSuccess(imageData) { 
+       var image = document.getElementById('img1'); 
+       image.src = "data:image/jpeg;base64," + imageData; 
+    }  
     
-}
+    function onFail(message) { 
+       alert('Failed because: ' + message); 
+    } 
+ }
