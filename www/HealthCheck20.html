@@ -1,328 +1,236 @@
 <!DOCTYPE html>
-
 <html>
-    <head>
-        <meta charset="utf-8"> 
-        <!--Import Google Icon Font-->
-        <meta name="viewport" content="width=device-width, initial-scale=1"> 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-
-        <link rel="stylesheet" href="css/jquery.mobile.custom.structure.min.css" />
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        
-        <script src="js/jquery-1.7.1.min.js"></script>
-        <script src="js/jquery.mobile-1.0.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-        <script>
-
-
-$(document).ready(function(){
-  $('.button-collapse').sideNav();
-});
-          
-        </script> 
-        <title>Health Check 20</title>
-    </head>
-    <body>
-    <div data-role="page" id="login" data-add-back-btn="true">
-           
-              <center>
+   <head>
+      <meta charset="utf-8">
+      <!--Import Google Icon Font-->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+      <link rel="stylesheet" href="css/jquery.mobile.custom.structure.min.css" />
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <script src="js/jquery-1.7.1.min.js"></script>
+      <script src="js/jquery.mobile-1.0.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+      <script>
+         $(document).ready(function(){
+           $('.button-collapse').sideNav();
+         });
+                   
                  
-                <div role ="main" class = "ui-content">
-                  <div class="row " style="display: inline-block; padding: 32px 48px 0px 48px;">
-          
-                    <h5 class="indigo-text">Please, login to Continue</h5>
-                    <div class="section"></div>
-                    <form class="col s12" method="post">
-                      <div class='row'>
+      </script> 
+      <title>Health Check 20</title>
+   </head>
+   <body>
+
+      <!-- login page  -->
+
+      <div data-role="page" id="login" data-add-back-btn="true">
+         <center>
+            <div role ="main" class = "ui-content">
+               <div class="row " style="display: inline-block; padding: 32px 48px 0px 48px;">
+                  <h5 class="indigo-text">Please, login to Continue</h5>
+                  <div class="section"></div>
+                  <form class="col s12" method="post">
+                     <div class='row'>
                         <div class='col s12'>
                         </div>
-                      </div>
-          
-                      <div class='row'>
+                     </div>
+                     <div class='row'>
                         <div class='input-field col s12'>
-                          <input class='validate' type='email' name='email' id='email' />
-                          <label for='email'>Enter your email</label>
+                           <input class='validate' type='email' name='email' id='email' />
+                           <label for='email'>Enter your email</label>
                         </div>
-                      </div>
-          
-                      <div class='row'>
+                     </div>
+                     <div class='row'>
                         <div class='input-field col s12'>
-                          <input class='validate' type='password' name='password' id='password' />
-                          <label for='password'>Enter your password</label>
+                           <input class='validate' type='password' name='password' id='password' />
+                           <label for='password'>Enter your password</label>
                         </div>
                         <label style='float: left;'>
-                                          <a class='blue-text' href='#!'><b>Forgot Password?</b></a>
-                                      </label>
-                      </div>
-          
-                      <br />
-                      <center>
+                        <a class='blue-text' href='#!'><b>Forgot Password?</b></a>
+                        </label>
+                     </div>
+                     <br />
+                     <center>
                         <div class='row'>
-                          <a type='submit' name='btn_login' class='col s12 btn btn-large waves-effect indigo' href="#bilan">Signin</a>
+                           <a type='submit' name='btn_login' class='col s12 btn btn-large waves-effect indigo' href="#bilan">Signin</a>
                         </div>
                         <div class='row'>
-                            <a type='submit' name='btn_signup' href="#signup" class='col s12 btn btn-large waves-effect indigo'>SignUP</a>
+                           <a type='submit' name='btn_signup' href="#signup" class='col s12 btn btn-large waves-effect indigo'>SignUP</a>
                         </div>
+                     </center>
+                  </form>
+               </div>
+            </div>
+         </center>
+      </div>
+      <!-- login page ends here  -->
 
-                      </center>
-                    </form>
-                  </div>
-                  
-                </div>
-              </center>
-          
-            
-            
-        </div>
+
       <!--page sign up -->
-        <div data-role="page" id="signup">
-            <center>
-              <div class="container">
-                <div class="row " style="display: inline-block; padding: 32px 48px 0px 48px;">
-        
-                  <h5 class="indigo-text">Please, Sign up to Continue</h5>
-                  <form class="col s12" method="post">
-                    <div class='row'>
-                      <div class='col s12'>
-                      </div>
-                    </div>
-                    <div class='row'>
-                      <div class='input-field col s12'>
+      <div data-role="page" id="signup">
+      <center>
+         <div class="container">
+            <div class="row " style="display: inline-block; padding: 32px 48px 0px 48px;">
+               <h5 class="indigo-text">Please, Sign up to Continue</h5>
+               <form class="col s12" method="post">
+                  <div class='row'>
+                     <div class='col s12'>
+                     </div>
+                  </div>
+                  <div class='row'>
+                     <div class='input-field col s12'>
                         <input class='validate' type='text' name='full name' id='fullname' />
                         <label for='fullname'>Enter your full name</label>
-                      </div>
-                    </div>
-        
-                    <div class='row'>
-                      <div class='input-field col s12'>
+                     </div>
+                  </div>
+                  <div class='row'>
+                     <div class='input-field col s12'>
                         <input class='validate' type='email' name='email' id='email2' />
                         <label for='email2'>Enter your email</label>
-                      </div>
-                    </div>
-        
-                    <div class='row'>
-                      <div class='input-field col s12'>
+                     </div>
+                  </div>
+                  <div class='row'>
+                     <div class='input-field col s12'>
                         <input class='validate' type='password' name='password' id='password2' />
                         <label for='password2'>Enter your password</label>
-                      </div>
-                     
-                      
-        
-                    <br />
-                    <center>
-                      <div class='row'>
-                        <a type='submit' name='btn_confirm' class='col s12 btn btn-large waves-effect indigo'>confirm</a>
-                      </div>
-                     
-
-                    </center>
-                  </form>
-                </div>
-              </div>
-            </center>
-        
+                     </div>
+                     <br />
+                     <center>
+                        <div class='row'>
+                           <a type='submit' name='btn_confirm' class='col s12 btn btn-large waves-effect indigo'>confirm</a>
+                        </div>
+                     </center>
+               </form>
+               </div>
+            </div>
+      </center>
       </div>
+      <!-- page sign up ends here  -->
 
 
-            <!--page bilan  -->
-
+      <!--page bilan  -->
       <div data-role="page" id="bilan">
-        
-          <center>
+         <center>
             <div class="container">
-              <div class="row " style="display: inline-block; padding: 32px 48px 0px 48px;">
-                <div class="section"></div>
-      
-                <h5 class="indigo-text">Bilan</h5>
-                <div class="section"></div>
-                <form class="col s12" method="post">
-                  <div class='row'>
-                    <div class='col s12'>
-                    </div>
-                  </div>
-  
-                
-
+               <div class="row " style="display: inline-block; padding: 32px 48px 0px 48px;">
+                  <h5 class="indigo-text">Bilan</h5>
+                  
                   <form action="#">
 
-                  <div class='row'>
-                    <div class='input-field col s12'>
-                      <input class='datepicker' type='date' name='birthdate' id='birthdate' />
-                      <label for='birthdate'>Enter Your Birthdate</label>
-                    </div>
-                  </div>
-      
+                     <div class='row'>
+                        <div class='input-field col s12'>
+                           <input class='datepicker' type='date' name='birthdate' id='birthdate' />
+                           <label for='birthdate'>Enter Your Birthdate</label>
+                        </div>
+                     </div>
+                     
+                     <div class='row'>
+                        <div class='input-field col s12'>
+                           <label for="male"> Sex : </label>
+                           <div class='row'>
+                              <input  type='radio' name='male'  />
+                              <label for="male"> Male </label>
+                           </div>
+                           <div class='row'>
+                              <input  type='radio' name='female'  />
+                              <label for="female"> Female </label>
+                           </div>
+                        </div>
+                     </div>
 
-                  <div class='row'>
-                    <div class='input-field col s12'>
-                      
-                      <label for="male"> Sex : </label>
+                     <div class='input-field col s12'>
+                             <label for="number-1">Height in Cm</label>
+                             <input type="number" data-clear-btn="false" name="number-1" id="number-1" value="">
+                     </div>
 
-                      
-                      <div class='row'>
-                          <input  type='radio' name='male'  />
-                          <label for="male"> Male </label>
-                      </div>
+                     <div class='input-field col s12'>
+                             <label for="number-1">weight in Cm</label>
+                             <input type="number" data-clear-btn="false" name="number-2" id="number-2" value="">
+                     </div>
 
-                      <div class='row'>
-                        <input  type='radio' name='female'  />
-                        <label for="female"> Female </label>
-                    </div>
-                  
-                    </div>
-                  </div>
+                     <div class='input-field col s12'>
+                             <label for="number-1">Body Fat Ration in %</label>
+                             <input type="number" data-clear-btn="false" name="number-3" id="number-3" value="">
+                     </div>
 
-                
-
-                
-    
-           <!-- will fix this later !!!-->
-
-      <div class='input-field col s12'>
-        <form>
-               <label for="number-1">Height in Cm</label>
-               <input type="number" data-clear-btn="false" name="number-1" id="number-1" value="">
-        </form>
-        </div>
-        <div class='input-field col s12'>
-        <form>
-               <label for="number-1">weight in Cm</label>
-               <input type="number" data-clear-btn="false" name="number-2" id="number-2" value="">
-        </form>
-        </div>
-        <div class='input-field col s12'>
-        <form>
-               <label for="number-1">Body Fat Ration in %</label>
-               <input type="number" data-clear-btn="false" name="number-3" id="number-3" value="">
-        </form>
-        </div>
-        <div class='row'>
-          <a type='submit' name='btn_submit' href="#dashboard" class='col s12 btn btn-large waves-effect indigo'>submit</a>
-        </div>
-    </form>
-        
-     
-      
+                     
+                     <div class='row'>
+                        <a type='submit' name='btn_submit' href="#dashboard" class='col s12 btn btn-large waves-effect indigo'>submit</a>
+                     </div>
+                 
+                 </div>
+             </div>
+             </center>
       </div>
-            <!--page sign up -->
 
-
-            <!-- page profile , will modify and link this later -->
-        
-
-            <div data-role="page" id="profilePage" 
-                  <center>
-
-                   <div class="container">
-                      <div class="row " style="display: inline-block; padding: 32px 48px 0px 48px;">
-                        
-                                         
-          
-                      <h5 class="indigo-text">Profile Check</h5>	            
-                        
-          
-          
-                        <form class="col s12" method="post">
-          
-                              <h6 class="blue-text">User name</h6>
-                
-                              <i class="large material-icons">account_circle</i>
-                
-                              <div class='row'></div>
-                              <img src="" id="img1" />
-                              <a class="waves-effect waves-light btn indigo" id="Upload">Upload</a>
-                
-                                <div class='input-field col s12'>
-                  
-                                  <input class='validate' type='text' name='full name' id='fullname3' />
-                  
-                                  <label for='fullname'>Enter your full name</label>
-                  
-                                </div>
-
-
-                              <div class='input-field col s12'>
-                
-                                <input class='validate' type='email' name='email' id='email3' />
-                
-                                <label for='fullname'>Enter Email</label>
-                
-                              </div>
-                
-
-                              <div class='input-field col s12'>
-                
-                                <input class='validate' type='password' name='password' id='password3' />
-                
-                                <label for='fullname'>Enter Password</label>
-                
-                              </div>
-                
-                              <div class='row'></div> 
-                
-                              <a class="waves-effect waves-light btn indigo">Upload</a>
-
-                        </form>
-
-                        
-                       
-                      </div>
-                    </center>
-               </div>
-            <!-- page profile , will modify this later -->
-
-
-    
-            <!-- page dashbard  -->
-            <div data-role="page" id="dashboard" data-add-back-btn="true">
-           
-                 
-                <div data-role="toolbar" data-type="header" style="overflow:hidden;">
-                  
-
-              <!-- navbar starts here  -->
-
-              <nav class="nav">
-                <div data-role="navbar" class="nav-wrapper indigo">
-                  
-                    <a href="#" class="brand-logo center">Dashboard</a>
-
-                <a href="#" data-activates="mobile-screen" class="button-collapse left"><i class="material-icons">menu</i></a>
-                
-                <ul id="nav-mobile" class="left hide-on-med-and-down">
-                  <li><a id="profilenav" href="#profilePage">Profile</a></li>
-                  <li><a id="settingsnav" href="#settings">Settings</a></li>
-                  <li><a id="lougoutnav" href="#logout">logout</a></li>
-              </ul>
-
-
-                    <ul class="side-nav" id="mobile-screen">
-                      <li><a id="sideprofilenav" href="#profilePage">Profile</a></li>
-                      <li><a id="sidesettingsnav" href="#settings">Setings</a></li>
-                      <li><a id="sidelogoutnav" href="#logout">Logout</a></li>
-                    </ul>
-                </div>
-            </nav>
-
-
-             <!-- navbar ends here  -->
-
-             <div role ="main">
-            <div class="row">
-                <div class="col s12 m4 l4">
-                 
-                </div>
-            </div>
-          </div>
-      <div class="row " style="display: inline-block; padding: 32px 48px 0px 48px;">
      
-                  </div>
-                  
-                </div>
-        </div>
-        <!-- add plugin -->
-        <script type="text/javascript" src="js/addplugin.js"></script>
 
-    </body>
+      <!-- page profile , will modify and link this later -->
+
+      <div data-role="page" id="profilePage">
+      <center>
+         <div class="container">
+            <div class="row " style="display: inline-block; padding: 32px 48px 0px 48px;">
+               <h5 class="indigo-text">Profile Check</h5>
+               <form class="col s12" method="post">
+                  <h6 class="blue-text">User name</h6>
+                  <i class="large material-icons">account_circle</i>
+                  <div class='row'></div>
+                  <img src="" id="img1" />
+                  <a class="waves-effect waves-light btn indigo" id="Upload">Upload</a>
+                  <div class='input-field col s12'>
+                     <input class='validate' type='text' name='full name' id='fullname3' />
+                     <label for='fullname'>Enter your full name</label>
+                  </div>
+                  <div class='input-field col s12'>
+                     <input class='validate' type='email' name='email' id='email3' />
+                     <label for='fullname'>Enter Email</label>
+                  </div>
+                  <div class='input-field col s12'>
+                     <input class='validate' type='password' name='password' id='password3' />
+                     <label for='fullname'>Enter Password</label>
+                  </div>
+                  <div class='row'></div>
+                  <a class="waves-effect waves-light btn indigo">Upload</a>
+               </form>
+            </div>
+      </center>
+      </div>
+      <!-- page profile , will modify this later -->
+
+
+      <!-- page dashbard  -->
+      <div data-role="page" id="dashboard" data-add-back-btn="true">
+         <div data-role="toolbar" data-type="header" style="overflow:hidden;">
+            <!-- navbar starts here  -->
+            <nav class="nav">
+               <div data-role="navbar" class="nav-wrapper indigo">
+                  <a href="#" class="brand-logo center">Dashboard</a>
+                  <a href="#" data-activates="mobile-screen" class="button-collapse left"><i class="material-icons">menu</i></a>
+                  <ul id="nav-mobile" class="left hide-on-med-and-down">
+                     <li><a id="profilenav" href="#profilePage">Profile</a></li>
+                     <li><a id="settingsnav" href="#settings">Settings</a></li>
+                     <li><a id="lougoutnav" href="#logout">logout</a></li>
+                  </ul>
+                  <ul class="side-nav" id="mobile-screen">
+                     <li><a id="sideprofilenav" href="#profile">Profile</a></li>
+                     <li><a id="sidesettingsnav" href="#settings">Setings</a></li>
+                     <li><a id="sidelogoutnav" href="#logout">Logout</a></li>
+                  </ul>
+               </div>
+            </nav>
+            <!-- navbar ends here  -->
+            <div role ="main">
+               <div class="row">
+                  <div class="col s12 m4 l4">
+                  </div>
+               </div>
+            </div>
+            <div class="row " style="display: inline-block; padding: 32px 48px 0px 48px;">
+            </div>
+         </div>
+      </div>
+      <!-- add plugin -->
+      <script type="text/javascript" src="js/addplugin.js"></script>
+   </body>
 </html>
