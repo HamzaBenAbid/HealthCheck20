@@ -102,7 +102,7 @@
          <div class="container">
             <div class="row " style="display: inline-block; padding: 32px 48px 0px 48px;">
                <h5 class="indigo-text">Please, Sign up to Continue</h5>
-               <form class="col s12"  action="#">
+               <form class="col s12"  onSubmit="authRegister(event)"  action="" >
                   <div class='row'>
                      <div class='col s12'>
                      </div>
@@ -127,11 +127,17 @@
                      <br />
                      <center>
                         <div class='row'>
-                           <a type='submit' name='signupsub' class='col s12 btn btn-large waves-effect indigo' id='signupsub' href="#login">confirm</a>
+                       
+                          <button type='submit' name='signupsub' class=' col s12 btn btn-large waves-effect indigo'  id='signupsub'>
                         </div>
                      </center>
                      
                </form>
+
+               <div class="indigo-text" id="signupConfirmation">
+                     
+                  </div>
+
                </div>
             </div>
       </center>

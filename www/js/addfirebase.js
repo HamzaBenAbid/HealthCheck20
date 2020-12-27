@@ -28,20 +28,24 @@ var app = {
 app.initialize();
 
 // Sign up and Login 
-	$('#signupsub').click(function(){
+
+
+this.SignupConfirmation = document.querySelector("#signupConfirmation");
+
+    function authRegister(event){
+         		
+         var inputEmail = $('#Email').val()
+		 var inputPass = $('#UserPassword').val()
 		
-        var inputEmail = $('#Email').val()
-		var inputPass = $('#UserPassword').val()
-		
-		firebase.auth().createUserWithEmailAndPassword(inputEmail, inputPass).catch(function(error) {
-			// lets save errors here
-			var errorCode = error.code;
-			var errorMessage = error.message;
-			
-        });
+		firebase.auth().createUserWithEmailAndPassword(inputEmail, inputPass).then(function () {
+            this.SignupConfirmation.innerHTML = "Registered successfully !";
+          })
+          .catch(function(err) {
+            alert(err.message)
+           
+        })
         
-		alert('Account Created , Please Login with :' + inputEmail)
-    })
+    }
     
 
 
