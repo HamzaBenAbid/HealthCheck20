@@ -30,17 +30,16 @@ app.initialize();
 // Sign up and Login 
 	$('#signupsub').click(function(){
 		
-		var inputEmail = $('#Email').val()
+        var inputEmail = $('#Email').val()
 		var inputPass = $('#UserPassword').val()
 		
-		firebase.auth().createUserWithEmailAndPassword(
-			inputEmail, inputPass
-		).catch(function(error) {
+		firebase.auth().createUserWithEmailAndPassword(inputEmail, inputPass).catch(function(error) {
 			// lets save errors here
 			var errorCode = error.code;
 			var errorMessage = error.message;
 			
-		});
+        });
+        
 		alert('Account Created , Please Login with :' + inputEmail)
     })
     
